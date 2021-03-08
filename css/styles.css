@@ -1,0 +1,435 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Raleway", sans-serif;
+  --main-color: #ffffff;
+  --second-color: #2196f3;
+  --bottom-background: #188ce8;
+  --text-color: #212121;
+  --second-text-color: #757575;
+  --second-background: #2F303A;
+  --team-background: #F5F4FA;
+  --logo-link-light: #000000;
+  --section-pb: 94px;
+  --section-pt: 94px; 
+}
+
+.section {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+.body {
+  font-family: var(--main-font);
+  font-weight: 400;
+  background: var(--main-color);
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+ display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+
+/* ==========COMPONENT========== */
+.logo {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192em;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.web {
+  color: var(--second-color);
+}
+
+.logo-link-light {
+  color: var(--logo-link-light);
+}
+
+.logo-link-dark {
+  color: var(--main-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.666em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* ==========END COMPONENT========== */
+/* ==========HEADER========== */
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header .container {
+  width: 1170px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143em;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--second-color);
+}
+
+.current {
+  color: var(--second-color);
+}
+
+.list-link {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.mail-link,
+.tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143em;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.tel-link:focus,
+.tel-link:hover,
+.mail-link:focus,
+.mail-link:hover {
+  color: var(--second-color);
+}
+
+.tel-link-item { 
+  margin-left: 50px;
+}
+/* ==========END HEADER==========*/
+/* ==========HERO========== */
+.hero {
+  background-image: url(../img/hero-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero .container {
+  padding: 200px 252px;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-color);
+  padding-bottom: 30px;
+}
+
+.hero-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--main-color);
+  background: var(--second-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.hero-button:hover ,
+.hero-button:focus {
+  background-color: var(--bottom-background);
+}
+/* ==========END HERO========== */
+/* ==========ADVANTAGES========== */
+.advantages {
+  padding-bottom: 0;
+}
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  padding-bottom: 10px;
+}
+
+.advantages-list {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.advantages-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.advantages-description {
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+/* ==========END ADVANTAGES========== */
+/* ==========WE DOING========== */
+.we-doing-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.we-doing-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* ==========END WE DOING========== */
+/* ==========TEAM========== */
+.team {
+  background: var(--team-background);
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: var(--main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.name-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.187em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--second-text-color);
+}
+/* ==========END TEAM==========*/
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166em;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}
+/* ==========FOOTER==========*/
+.footer .logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer {
+  background-color: var(--second-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address-list {
+  padding-top: 20px;
+}
+
+.address-list-link {
+  margin-top: 8px;
+  margin-bottom: 8px; 
+}
+.map-link {
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.mail-link-footer,
+.tel-link-footer {
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.map-link:focus,
+.map-link:hover,
+.mail-link-footer:focus,
+.mail-link-footer:hover,
+.tel-link-footer:focus,
+.tel-link-footer:hover {
+  color: var(--second-color);
+}
+/* ==========END FOOTER==========*/
+
+/* ==========PORTFOLIO==========*/
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfoilio-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-button {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625em;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background-color: var(--team-background);
+  color: var(--text-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  border: 0;
+}
+
+.portfolio-button:hover ,
+.portfolio-button:focus {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.porfolio-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-cards-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: var(--main-color);
+}
+
+.portfolio-cards-list-item:hover ,
+.portfolio-cards-list-item:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.portfolio-cards-content { 
+  padding: 20px 24px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  border-top: 0;
+  box-sizing: border-box;
+}
+.title-cards {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+  color: var(--text-color);
+}
+
+.cards-about {
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color); 
+}
