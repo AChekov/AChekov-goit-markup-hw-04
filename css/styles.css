@@ -199,15 +199,11 @@ img {
 }
 
 .mail-icon {
-  display: flex;
-  align-items: center;
   margin-right: 10px;
   fill: var(--second-text-color);
 }
 
 .tel-icon {
-  display: flex;
-  align-items: center;
   margin-right: 10px;
   fill: var(--second-text-color);
 }
@@ -496,8 +492,12 @@ img {
 .container-footer-icon {
  display: block;
  box-sizing: border-box;
- min-width: 206px;
 }
+
+.social-list-item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social-footer {
   font-family: var(--main-font);
   font-weight: 700;
@@ -556,7 +556,6 @@ img {
   cursor: pointer;
   background-color: var(--team-background);
   color: var(--text-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
   border: 0;
 }
